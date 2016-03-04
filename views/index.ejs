@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+</head>
+<header>
+<h3>Practica de node aplicando base de datos usando Mongodb y ejs</h3>
+</header>
+
+<body>
+
+<form action="/adduser" method="post">
+    <input type="text" name="name_input" value="Name">
+    <input type="text" name="email_input" value="Email">
+    <input type="text" name="phone_input" value="Phone">
+    <input type="submit" value="Submit">
+</form>
+<br></br>
+<ul> <% for (var i in title) { %>
+	  <li><%= title[i].name %></li>
+	  <li><%= title[i].email %></li> 
+	  <li><%= title[i].phone %></li>      
+
+<% } %>
+</ul>
+<div id="fecha"> <% var date = Date();%>
+<br></br>
+<p>La fecha de hoy es:</p> 
+<%= date%></div>
+</body>
+</html>
